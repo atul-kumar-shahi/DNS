@@ -46,10 +46,10 @@ class _SideBarState extends State<SideBar> {
             ),
             accountName: Text(_user!.displayName??
               'Developer Network Society',
-              style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold,fontSize: 17),
+              style: const TextStyle(color: Colors.black,fontWeight: FontWeight.bold,fontSize: 17),
             ),
             accountEmail: Text(_user!.email!,
-                style: TextStyle(color: Colors.black)),
+                style: const TextStyle(color: Colors.black)),
             currentAccountPicture: CircleAvatar(
                 backgroundColor: Colors.white,
                 child: ClipOval(
@@ -61,12 +61,12 @@ class _SideBarState extends State<SideBar> {
                 ))),
           ),
           ListTile(
-            leading: Icon(Icons.accessibility_new_rounded),
-            title: Text('Mentors'),
+            leading: const Icon(Icons.accessibility_new_rounded),
+            title: const Text('Mentors'),
             trailing: IconButton(
-              icon: Icon(Icons.arrow_drop_down),
+              icon: const Icon(Icons.arrow_drop_down),
               onPressed: (){
-                Column(
+                const Column(
                   children: [
                     Text('Hello')
                   ],
@@ -74,7 +74,7 @@ class _SideBarState extends State<SideBar> {
               },
             ),
             onTap: (){
-              DropdownMenuItem(
+              const DropdownMenuItem(
                 child: Column(
                   children: [
                     Text('Hello'),
@@ -85,30 +85,30 @@ class _SideBarState extends State<SideBar> {
                 ),
               );
               Navigator.pop(context);
-              Navigator.push(context, MaterialPageRoute(builder: (context)=>Mentors()));
+              Navigator.push(context, MaterialPageRoute(builder: (context)=>const Mentors()));
             },
           ),
           ListTile(
-            leading: Icon(Icons.event),
-            title: Text('Upcoming Events'),
+            leading: const Icon(Icons.event),
+            title: const Text('Upcoming Events'),
             onTap: (){
               Navigator.pop(context);
-              Navigator.push(context, MaterialPageRoute(builder: (context)=>Events()));
+              Navigator.push(context, MaterialPageRoute(builder: (context)=>const Events()));
             },
           ),
           ListTile(
 
             leading: SvgPicture.asset('assets/images/about.svg',height: 25,color: Colors.blue,),
-            title: Text('About'),
+            title: const Text('About'),
             onTap: (){
               Navigator.pop(context);
-              Navigator.push(context, MaterialPageRoute(builder: (context)=>About()));
+              Navigator.push(context, MaterialPageRoute(builder: (context)=>const About()));
             },
           ),
 
           ListTile(
-            leading: Icon(Icons.logout),
-            title: Text('Logout'),
+            leading: const Icon(Icons.logout),
+            title: const Text('Logout'),
             onTap: (){
               FirebaseAuth.instance.signOut();
             },

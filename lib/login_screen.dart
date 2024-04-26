@@ -15,16 +15,16 @@ class LoginScreen extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             mainAxisSize: MainAxisSize.min,
             children: [
-              SizedBox(height: 50,),
-              Icon(Icons.lock,size: 100,),
-              SizedBox(height: 50,),
+              const SizedBox(height: 50,),
+              const Icon(Icons.lock,size: 100,),
+              const SizedBox(height: 50,),
               Text('Welcome back you\'ve been missed!',style: TextStyle(
                 color:Colors.grey.shade700,
                 fontSize: 16
               ),),
-              SizedBox(height: 20,),
-              EmailSignIn(),
-              SizedBox(height: 60,),
+              const SizedBox(height: 20,),
+              const EmailSignIn(),
+              const SizedBox(height: 60,),
               Padding(
                 padding:const EdgeInsets.symmetric(horizontal: 25.0),
                 child: Row(
@@ -36,7 +36,7 @@ class LoginScreen extends StatelessWidget {
                       ),
                     ),
                     Padding(
-                        padding: EdgeInsets.symmetric(horizontal: 10),
+                        padding: const EdgeInsets.symmetric(horizontal: 10),
                       child: Text('Or continue with',style: TextStyle(
                         color: Colors.grey.shade700,
                       ),),
@@ -50,9 +50,9 @@ class LoginScreen extends StatelessWidget {
                   ],
                 ),
               ),
-              SizedBox(height: 50),
+              const SizedBox(height: 50),
 
-              GoogleLogin(),
+              const GoogleLogin(),
             ],
           ),
         ),

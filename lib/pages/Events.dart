@@ -20,7 +20,7 @@ class Events extends StatelessWidget {
           ),
         ),
       ),
-      body: Center(
+      body: const Center(
         child: Text('Upcoming Events'),
       ),
     );

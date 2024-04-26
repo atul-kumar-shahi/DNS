@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:dns_intro/widgets/custom_card.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:url_launcher/url_launcher.dart';
 final Uri _url = Uri.parse('https://flutter.dev');
@@ -16,7 +15,7 @@ class Mentors extends StatelessWidget {
       backgroundColor: Colors.grey.shade200,
       appBar: AppBar(
         foregroundColor: Colors.grey.shade200,
-        title: Text('Mentors'),
+        title: const Text('Mentors'),
         elevation: 0,
         backgroundColor: Colors.white24,
         leading: Padding(
@@ -35,7 +34,7 @@ class Mentors extends StatelessWidget {
       ),
       body: Center(
         child: ListView(
-          children: [
+          children: const [
             CustomCard(),
             CustomCard(),
             CustomCard(),
@@ -59,7 +58,7 @@ class CustomCard extends StatelessWidget {
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(20)
       ),
-      margin: EdgeInsets.all(20),
+      margin: const EdgeInsets.all(20),
       child: Column(
         children: [
           Image.asset(
@@ -68,10 +67,10 @@ class CustomCard extends StatelessWidget {
             height: 150,
             width: double.infinity,
           ),
-          Text('Android developer',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 20),),
+          const Text('Android developer',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 20),),
           // SizedBox(height: 10,),
           Padding(
-            padding:  EdgeInsets.all(10.0),
+            padding:  const EdgeInsets.all(10.0),
             child:  Text(
                 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, '
                     'sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. '
@@ -82,9 +81,9 @@ class CustomCard extends StatelessWidget {
               IconButton(onPressed: () async{
                 await launchUrl(_url);
 
-              }, icon: FaIcon(FontAwesomeIcons.linkedin),),
-              IconButton(onPressed: (){}, icon: FaIcon(FontAwesomeIcons.instagram),),
-              IconButton(onPressed: (){}, icon: FaIcon(FontAwesomeIcons.envelope),)
+              }, icon: const FaIcon(FontAwesomeIcons.linkedin),),
+              IconButton(onPressed: (){}, icon: const FaIcon(FontAwesomeIcons.instagram),),
+              IconButton(onPressed: (){}, icon: const FaIcon(FontAwesomeIcons.envelope),)
             ],
           )
 

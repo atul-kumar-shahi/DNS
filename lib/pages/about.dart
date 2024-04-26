@@ -11,7 +11,7 @@ class About extends StatelessWidget {
         backgroundColor: Colors.white24,
         elevation: 0,
         leading: Padding(
-          padding: EdgeInsets.all(15),
+          padding: const EdgeInsets.all(15),
           child: GestureDetector(
             onTap: (){
               Navigator.pop(context);
@@ -20,7 +20,7 @@ class About extends StatelessWidget {
           ),
         ),
       ),
-      body: Center(child: Text('About Section')),
+      body: const Center(child: Text('About Section')),
     );
   }
 }

@@ -23,7 +23,7 @@ class _EmailSignInState extends State<EmailSignIn> {
   }
 
    void onSignUpPage(){
-    Navigator.push(context, MaterialPageRoute(builder: (context)=>SignUp()));
+    Navigator.push(context, MaterialPageRoute(builder: (context)=>const SignUp()));
   }
 
 
@@ -47,7 +47,7 @@ class _EmailSignInState extends State<EmailSignIn> {
                 isObscuredText: true),
           ],
         ),
-        SizedBox(
+        const SizedBox(
           height: 8,
         ),
         Padding(
@@ -56,7 +56,7 @@ class _EmailSignInState extends State<EmailSignIn> {
             mainAxisAlignment: MainAxisAlignment.end,
             children: [
               GestureDetector(
-                child: Text('Forget Password?',style: TextStyle(color: Colors.blue),),
+                child: const Text('Forget Password?',style: TextStyle(color: Colors.blue),),
                 onTap: () {},
               ),
             ],
@@ -75,7 +75,7 @@ class _EmailSignInState extends State<EmailSignIn> {
               }
             },
             text: 'Sign In'),
-        SizedBox(height: 10,),
+        const SizedBox(height: 10,),
         CustomText(onTap:(){
           onSignUpPage();
         })

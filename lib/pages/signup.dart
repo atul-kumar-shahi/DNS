@@ -31,32 +31,32 @@ class _SignUpState extends State<SignUp> {
             mainAxisAlignment: MainAxisAlignment.center,
             mainAxisSize: MainAxisSize.min,
             children: [
-              SizedBox(height: 50,),
-              Icon(Icons.lock,size: 100,),
-              SizedBox(height: 50,),
+              const SizedBox(height: 50,),
+              const Icon(Icons.lock,size: 100,),
+              const SizedBox(height: 50,),
               Text('Enter Your Email and Password to Login',style: TextStyle(
                 color: Colors.grey.shade600,
                 fontSize: 16,
               ),),
-              SizedBox(height: 30,),
+              const SizedBox(height: 30,),
               CustomTextField(
                 controller: _emailController,
                 hintText: 'Enter your email',
                 keyboardType: TextInputType.emailAddress,
               ),
-              SizedBox(height: 10,),
+              const SizedBox(height: 10,),
               CustomTextField(
                 controller: _passwordController,
                 hintText: 'Enter your password',
                 isObscuredText: true,
               ),
-              SizedBox(height: 10,),
+              const SizedBox(height: 10,),
               CustomTextField(
                 controller: _confirmPassordController,
                 hintText: 'Confirm password',
                 isObscuredText: true,
               ),
-              SizedBox(height: 50,),
+              const SizedBox(height: 50,),
               CustomButton(text: 'Sign Up', onTap: (){
                 if (_emailController.text.isNotEmpty &&
                     _passwordController.text.length > 6) {

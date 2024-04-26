@@ -1,5 +1,4 @@
 import 'package:dns_intro/pages/sidebar.dart';
-import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 
@@ -10,14 +9,14 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Developer Network Society'),
+        title: const Text('Developer Network Society'),
         foregroundColor: Colors.black,
         backgroundColor: Colors.white24,
         elevation: 0,
       ),
-      drawer: SideBar(),
+      drawer: const SideBar(),
       endDrawerEnableOpenDragGesture: true,
-      body: Column(
+      body: const Column(
         children: [Carousel()],
       ),
     );
@@ -71,7 +70,7 @@ class Carousel extends StatelessWidget {
             height: 200,
             aspectRatio: 1,
             autoPlay: true,
-            autoPlayAnimationDuration: Duration(seconds: 1),
+            autoPlayAnimationDuration: const Duration(seconds: 1),
             animateToClosest: true,
             enlargeCenterPage: true,
             enlargeStrategy: CenterPageEnlargeStrategy.zoom,

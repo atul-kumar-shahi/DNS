@@ -9,7 +9,7 @@ class CustomCard extends StatelessWidget {
       elevation: 0.8,
       shadowColor: Colors.red,
       child: Container(
-        decoration: BoxDecoration(borderRadius: BorderRadius.circular(100),boxShadow:[
+        decoration: BoxDecoration(borderRadius: BorderRadius.circular(100),boxShadow:const [
           // BoxShadow(
           //   color: Colors.red,
           //   blurRadius: 10,
@@ -17,7 +17,7 @@ class CustomCard extends StatelessWidget {
           // )
         ]
         ),
-        padding: EdgeInsets.only(left: 20, right: 20,top: 20,bottom: 20),
+        padding: const EdgeInsets.only(left: 20, right: 20,top: 20,bottom: 20),
         child: Column(
           children: [
             Image.asset(
